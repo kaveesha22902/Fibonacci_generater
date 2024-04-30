@@ -1,19 +1,24 @@
-def fibonacci_generator(length):
-    a, b = 0, 1
+def fibonacci_generater(length):
+    a,b = 0,1
+    
     for _ in range(length):
         yield a
-        a, b = b, a + b
-
+        a,b = b, a+b
+        
+        
 def main():
     try:
-        length = int(input("Enter the length of Fibonacci sequence: "))
+        length = int(input("Enter the length of fibonacci sequnce : "))
+        
         if length <= 0:
-            print("Length have to be positive integer.")
+            print("length is not valid , try again..")
             return
-        fibonacci_sequence = list(fibonacci_generator(length))
-        print("Fibonacci sequence length", length, "is:", fibonacci_sequence)
+        
+        fibonacci_sequnce = list(fibonacci_generater(length))
+        print("fibnacci_sequnce length", length,"is",fibonacci_sequnce)
+        
     except ValueError:
-        print("Invalid input.")
-
-if __name__ == "__main__":
+        print("Invalid input..")
+        
+if __name__ =="__main__":
     main()
