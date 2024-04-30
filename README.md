@@ -6,7 +6,7 @@ How to Use
 Clone the Repository:
 bash
 Copy code
-git clone https://github.com/yourusername/fibonacci-generator.git
+git clone https://github.com/kaveesha22902/Fibonacci_generater.git
 cd fibonacci-generator
 Run the Script:
 Copy code
